@@ -8,7 +8,7 @@ import random
 
 
 def main():
-    # counts how amny try taken
+    #  counts how many tries taken
     tries = 1
 
     while True:
