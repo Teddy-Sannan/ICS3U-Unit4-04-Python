@@ -8,6 +8,9 @@ import random
 
 
 def main():
+    # counts how amny try taken
+    tries = 1
+
     while True:
         # random number
         number = random.randint(0, 9)
@@ -25,10 +28,12 @@ def main():
                 # output
                 print()
                 print("Correct! My number was", number)
+                print("It took you", tries, "tries to guess my number")
 
             # process
             elif guess_as_number != number:
                 # output
+                tries += 1
                 print()
                 print("Sorry, thats not it")
                 print("Keep trying")
